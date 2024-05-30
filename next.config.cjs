@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	experimental: {
-		serverComponentsExternalPackages: ['@tldraw/tldraw'],
-	},
-}
+  experimental: {
+    output: "standalone",
+    serverComponentsExternalPackages: ["@tldraw/tldraw"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
